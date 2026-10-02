@@ -38,7 +38,7 @@ def argmax(values):
     """
     N = len(values)
 
-    imax = -1
+    imax = 0
     # set the vmax to lowest possible value
     vmax = -np.inf
 
@@ -56,6 +56,9 @@ def argmax(values):
 
 values = [2, 3, -1, 7, 4]
 print(f'The maximum is located at: {argmax(values)}')
+print(f'The maximum is located at: {np.argmax(values)}')
 
 
-print(np.argmax(values))
+if __name__ == '_main___':
+    # Run the main function if this script is executed
+    main()
